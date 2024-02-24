@@ -20,9 +20,8 @@ Waquar\env\Scripts>.\activate
 
 #install django
 ----------------------
-pip install django
 
-{env} Waquar>
+{env} Waquar>pip install django
 
 #start project Name Edvanta
 --------------------------
@@ -32,19 +31,21 @@ pip install django
 
 {env} Waquar\Edvanta>
 
-{env} Waquar\Edvanta>django-admin startapp CRUD_APP
+#start app name crud app
 ----------------------------------------
+{env} Waquar\Edvanta>django-admin startapp CRUD_APP
+
 #create model for databse
 
-py manage.py makemigrations
+{env} Waquar\Edvanta>py manage.py makemigrations
 
-py manage.py migrate
+{env} Waquar\Edvanta>py manage.py migrate
 
 #createsuperuser
 
-py manage.py createsuperuser
+{env} Waquar\Edvanta>py manage.py createsuperuser
 
-py manage.py runserver
+{env} Waquar\Edvanta>py manage.py runserver
 
 click on link-->http://127.0.0.1:8000/ to visit website 
 
